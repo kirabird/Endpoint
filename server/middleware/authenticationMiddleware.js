@@ -7,7 +7,7 @@ const app = require('../server');
 require('dotenv').config();
 
 authenticationMiddleware.generateRedirectURI = (req, res, next) => {
-  console.log(res.locals.csrfString);
+  // console.log(res.locals.csrfString);
   const githubURI =
     'https://github.com/login/oauth/authorize?' +
     queryString.stringify({
